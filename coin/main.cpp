@@ -56,7 +56,10 @@ int main(int argc, char*argv[])
 		else 
 			cout << "nickel: tails" << endl;
 	} while (cash < 1);
-	cout << "You win! Your cash: " << cash << endl;
+	if (cash == 1)
+		cout << "You win! Your cash: " << cash << endl;
+	else
+		cout << "You lose! Your cash: " << cash << endl;
 	system("pause");
     return 0;
 }
